@@ -203,17 +203,21 @@ html, body {
   }
   
   .galeria {
-    text-align: center;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    }
   
   .proyecto {
-    display: inline-block;
-    width: 30%;
-    margin: 1%;
-    vertical-align: top;
-    background-color: #eee;
-    padding: 10px;
-    border-radius: 5px;
+    flex: 1 1 280px;
+    max-width: 320px;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
   }
   
   .proyecto img {
@@ -266,8 +270,8 @@ html, body {
   }
   
 
-  /* ----------------------------- */
-/*         ESTILOS IMÁGENES     */
+/* ----------------------------- */
+/*         ESTILOS IMÁGENES      */
 /* ----------------------------- */
 
 .imagenes-contenido {
@@ -290,18 +294,20 @@ html, body {
   }
   
   .contenedor-galeria {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
   }
   
   .imagen-item {
-    width: 22%;
-    display: inline-block;
-    margin: 1.5%;
-    vertical-align: top;
+    flex: 1 1 220px;
+    max-width: 250px;
     background-color: #f0f0f0;
     padding: 10px;
     border-radius: 8px;
+    text-align: center;
   }
   
   .imagen-item img {
