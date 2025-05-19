@@ -1,340 +1,243 @@
-/* ----------------------------- */
-/*         LAYOUT GENERAL       */
-/* ----------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html, body {
-    height: 49%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  main {
-    flex: 1;
-    padding: 40px 20px;
-  }
-  
-  
-  /* ----------------------------- */
-  /*           ESTILOS INICIO     */
-  /* ----------------------------- */
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #222;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: inline-block;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-  
-  nav ul li a:hover {
-    color: #00bcd4;
-  }
-  
-  .contenido-inicio {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .contenido-inicio img {
-    float: left;
-    width: 45%;
-    max-width: 400px;
-    margin-right: 5%;
-    border-radius: 10px;
-  }
-  
-  .contenido-inicio p {
-    float: left;
-    width: 50%;
-    font-size: 0.9rem;
-    color: #444;
-  }
-  
-  footer {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.9rem;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  
-  /* ----------------------------- */
-  /*         ESTILOS CONTACTO     */
-  /* ----------------------------- */
-  
-  .contacto-contenedor {
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 20px 0;
-  }
-  
-  .contacto-formulario {
-    width: 45%;
-    float: left;
-  }
-  
-  .contacto-mapa {
-    width: 50%;
-    float: right;
-  }
-  
-  .contacto-formulario form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .contacto-formulario label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .contacto-formulario input,
-  .contacto-formulario textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contacto-formulario button {
-    background-color: #00bcd4;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .contacto-formulario button:hover {
-    background-color: #0097a7;
-  }
-  
-  footer {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  
-  footer .footer-info {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-  }
-  
-  
-  /* ----------------------------- */
-  /*         ESTILOS PORTAFOLIO   */
-  /* ----------------------------- */
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: #222;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: inline-block;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-  
-  .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    }
-  
-  .proyecto {
-    flex: 1 1 280px;
-    max-width: 320px;
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .proyecto img {
-    width: 100%;
-    height: auto;
-    background-color: #ccc;
-    aspect-ratio: 4/3;
-  }
-  
-  footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    font-size: 0.9rem;
-  }
-  
-  .columna {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1%;
-  }
+  height: 100%;
+}
 
-  /* ----------------------------- */
-/*          ESTILOS INFO        */
-/* ----------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+header, footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+footer .footer-info {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+.columna {
+  display: inline-block;
+  width: 30%;
+  margin: 1.5%;
+}
+
+.contenido-inicio {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.contenido-inicio img {
+  float: left;
+  width: 45%;
+  max-width: 400px;
+  margin-right: 5%;
+  border-radius: 10px;
+}
+.contenido-inicio p {
+  float: left;
+  width: 50%;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.contacto-contenedor {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.contacto-contenedor .contacto-formulario {
+  width: 45%;
+  float: left;
+}
+.contacto-contenedor .contacto-formulario form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contacto-contenedor .contacto-formulario form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contacto-contenedor .contacto-formulario form input,
+.contacto-contenedor .contacto-formulario form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contacto-contenedor .contacto-formulario form button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contacto-contenedor .contacto-formulario form button:hover {
+  background-color: #0097a7;
+}
+.contacto-contenedor .contacto-mapa {
+  width: 50%;
+  float: right;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.proyecto {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.proyecto img {
+  width: 100%;
+  height: auto;
+  background-color: #ccc;
+  aspect-ratio: 4/3;
+}
+.proyecto p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
 
 .info-contenido {
-    width: 90%;
-    margin: 40px auto;
-    text-align: center;
-  }
-  
-  .titulo-info {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .bloque-info {
-    width: 45%;
-    display: inline-block;
-    margin: 0 2%;
-    vertical-align: top;
-    text-align: justify;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-  }
-  
-
-/* ----------------------------- */
-/*         ESTILOS IMÁGENES      */
-/* ----------------------------- */
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+.info-contenido .titulo-info {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.info-contenido .bloque-info {
+  width: 45%;
+  display: inline-block;
+  margin: 0 2%;
+  vertical-align: top;
+  text-align: justify;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
 
 .imagenes-contenido {
-    width: 90%;
-    margin: 40px auto;
-    text-align: center;
-  }
-  
-  .imagenes-contenido h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #222;
-  }
-  
-  .intro-galeria {
-    width: 60%;
-    margin: 0 auto 30px auto;
-    color: #555;
-    font-size: 1rem;
-  }
-  
-  .contenedor-galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0;
-  }
-  
-  .imagen-item {
-    flex: 1 1 220px;
-    max-width: 250px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .imagen-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    background-color: #ccc;
-    aspect-ratio: 4/3;
-  }
-  
-  .imagen-item p {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: #333;
-  }
-  
-  .boton-portafolio {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #00bcd4;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .boton-portafolio:hover {
-    background-color: #0097a7;
-  }
+  width: 40%;
+  margin: 40px auto;
+  text-align: center;
+}
+.imagenes-contenido h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+.imagenes-contenido .intro-galeria {
+  width: 60%;
+  margin: 0 auto 30px auto;
+  color: #555;
+  font-size: 1rem;
+}
+.imagenes-contenido .contenedor-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.imagenes-contenido .contenedor-galeria .imagen-item {
+  flex: 0 1 250px;
+  max-width: 250px;
+  background-color: red;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.imagenes-contenido .contenedor-galeria .imagen-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+.imagenes-contenido .contenedor-galeria .imagen-item p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.boton-portafolio {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.boton-portafolio:hover {
+  background-color: #0097a7;
+}
+
+/*# sourceMappingURL=style.css.map */

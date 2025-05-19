@@ -1,0 +1,67 @@
+@use 'variables';
+@use 'mixins';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: variables.$fuente-principal;
+  background-color: variables.$color-fondo;
+  color: variables.$color-texto;
+  line-height: 1.6;
+  @include mixins.flex-col;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+header, footer {
+  background-color: variables.$color-header;
+  color: white;
+  padding: variables.$espaciado;
+  text-align: center;
+}
+
+footer {
+  font-size: 0.9rem;
+  margin-top: 50px;
+
+  .footer-info {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+    display: inline-block;
+
+    li {
+      display: inline;
+      margin: 0 15px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: capitalize;
+
+        &:hover {
+          color: variables.$color-primario;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+@use 'variables';
+@use 'mixins';
+
+
+.columna {
+  display: inline-block;
+  width: 30%;
+  margin: 1.5%;
+}
+
+// INICIO
+.contenido-inicio {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+
+  img {
+    float: left;
+    width: 45%;
+    max-width: 400px;
+    margin-right: 5%;
+    border-radius: variables.$radio-borde;
+  }
+
+  p {
+    float: left;
+    width: 50%;
+    font-size: 0.9rem;
+    color: #444;
+  }
+}
+
+// CONTACTO
+.contacto-contenedor {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: variables.$espaciado 0;
+
+  .contacto-formulario {
+    width: 45%;
+    float: left;
+
+    form {
+      background-color: white;
+      padding: variables.$espaciado;
+      border-radius: variables.$radio-borde;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        @include mixins.boton-base;
+      }
+    }
+  }
+
+  .contacto-mapa {
+    width: 50%;
+    float: right;
+  }
+}
+
+// PORTAFOLIO
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.proyecto {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    aspect-ratio: 4/3;
+  }
+
+  p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+// INFO
+.info-contenido {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+
+  .titulo-info {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .bloque-info {
+    width: 45%;
+    display: inline-block;
+    margin: 0 2%;
+    vertical-align: top;
+    text-align: justify;
+    background-color: white;
+    padding: 15px;
+    border-radius: variables.$radio-borde;
+    border: 1px solid #ccc;
+  }
+}
+
+// IMÁGENES
+.imagenes-contenido {
+  width: 40%;
+  margin: 40px auto;
+  text-align: center;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: variables.$color-header;
+  }
+
+  .intro-galeria {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    color: #555;
+    font-size: 1rem;
+  }
+
+  .contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    .imagen-item {
+      flex: 0 1 250px;
+      max-width: 250px;
+      background-color: red;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      box-sizing: border-box;
+
+      img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 5px;
+        background-color: #ccc;
+      }
+
+      p {
+        margin-top: 8px;
+        font-size: 0.9rem;
+        color: variables.$color-texto;
+      }
+    }
+  }
+}
+
+// BOTÓN PORTAFOLIO
+.boton-portafolio {
+  @include mixins.boton-base;
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+}

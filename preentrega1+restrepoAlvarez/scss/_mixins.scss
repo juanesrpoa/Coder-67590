@@ -1,0 +1,28 @@
+@use 'variables';
+
+@mixin boton-base {
+  background-color: variables.$color-primario;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: variables.$radio-borde;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: variables.$color-hover;
+  }
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
